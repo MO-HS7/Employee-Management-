@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .status-active {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .status-on-leave {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        .status-terminated {
+            background-color: #fecaca;
+            color: #991b1b;
+        }
+        .error-message {
+            animation: slideIn 0.3s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .table-row:hover {
+            background-color: #f9fafb;
+            transition: background-color 0.2s ease;
+        }
+        .btn-action {
+            transition: all 0.2s ease;
+        }
+        .btn-action:hover {
+            transform: translateY(-1px);
+        }
+        @media print {
+            body { font-size: 12px; }
+            .no-print { display: none !important; }
+        }
